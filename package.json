@@ -1,0 +1,34 @@
+{
+  "name": "clipboard-curl",
+  "title": "Clipboard Curl",
+  "description": "Transform curl commands from clipboard - change domain to localhost and clean up formatting",
+  "icon": "terminal",
+  "categories": ["Developer Tools"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "transform-curl",
+      "title": "Transform Curl to Localhost",
+      "description": "Takes curl from clipboard, changes domain to localhost:3000, removes backslashes, and copies back",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.64.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.8",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.38",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
